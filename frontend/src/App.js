@@ -3,7 +3,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
-import ExampleAPIs from "./pages/ExampleAPIs";
+import About from "./pages/About";
+import Publications from "./pages/Publications";
+import CV from "./pages/CV";
 
 // components
 import Navbar from "./components/Navbar";
@@ -16,8 +18,9 @@ function App() {
             <div className="content-container">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/example-apis" element={<ExampleAPIs />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/publications" element={<Publications />} />
+                    <Route path="/cv" element={<CV />} />
                 </Routes>
             </div>
             <Footer />

@@ -1,12 +1,19 @@
 import React from "react";
 import { Typography, Link, Box } from "@mui/material";
-import { AiFillGithub } from "react-icons/ai";
+import {
+    AiFillGithub,
+    AiOutlineInstagram,
+    AiOutlineTwitter,
+    AiFillLinkedin,
+} from "react-icons/ai";
 
 const Footer = () => {
+    const buttonTextColor = "#083054"; // Text color for buttons
+
     return (
         <Box
             sx={{
-                backgroundColor: (theme) => theme.palette.primary.main,
+                backgroundColor: (theme) => theme.palette.primary.white,
                 color: (theme) => theme.palette.common.white,
                 padding: (theme) => theme.spacing(2),
                 textAlign: "center",
@@ -25,7 +32,6 @@ const Footer = () => {
                 }}
             >
                 <Typography variant="body1">
-                    Made by Eamon Duffy
                     <Link
                         href="https://github.com/eamonduffy"
                         target="_blank"
@@ -37,7 +43,46 @@ const Footer = () => {
                             verticalAlign: "middle",
                         }}
                     >
-                        <AiFillGithub />
+                        <AiFillLinkedin color={buttonTextColor} size={30} />
+                    </Link>
+                    <Link
+                        href="https://github.com/eamonduffy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        color="inherit"
+                        underline="none"
+                        sx={{
+                            marginLeft: (theme) => theme.spacing(1),
+                            verticalAlign: "middle",
+                        }}
+                    >
+                        <AiOutlineInstagram color={buttonTextColor} size={30} />
+                    </Link>
+                    <Link
+                        href="https://github.com/eamonduffy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        color="inherit"
+                        underline="none"
+                        sx={{
+                            marginLeft: (theme) => theme.spacing(1),
+                            verticalAlign: "middle",
+                        }}
+                    >
+                        <AiOutlineTwitter color={buttonTextColor} size={30} />
+                    </Link>
+                    <Link
+                        href="https://github.com/eamonduffy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        color="inherit"
+                        underline="none"
+                        sx={{
+                            marginLeft: (theme) => theme.spacing(1),
+                            verticalAlign: "middle",
+                        }}
+                    >
+                        <AiFillGithub color={buttonTextColor} size={30} />
                     </Link>
                 </Typography>
             </div>
