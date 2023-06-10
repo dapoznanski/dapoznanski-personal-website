@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/about/About";
 import Publications from "./pages/Publications";
 import CV from "./pages/CV";
 

@@ -35,6 +35,7 @@ const Navbar = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-end",
+        // borderBottom: "1px black",
     };
 
     const toolbarStyles = {
