@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AppBar, Toolbar, Button, Box } from "@mui/material";
 
+import pdf from "../static/Diana_K_CV.pdf";
+
 const Navbar = () => {
     const location = useLocation();
     const isHomePage =
@@ -29,6 +31,10 @@ const Navbar = () => {
         };
     }, []);
 
+    const handleCVButtonClick = () => {
+        window.open(pdf, "_blank");
+    };
+
     const navbarStyles = {
         height: isHomePage ? "20vh" : "95px",
         backgroundColor: "white",
@@ -41,6 +47,7 @@ const Navbar = () => {
     const toolbarStyles = {
         display: "flex",
         justifyContent: "center",
+        paddingTop: "20px",
         paddingBottom: "20px",
     };
 
@@ -68,25 +75,28 @@ const Navbar = () => {
                         className="navbar-link"
                         style={{ textDecoration: "none" }}
                     >
-                        <strong
-                            style={{
-                                color: mainTitleColor,
-                                fontSize: mainTitleSize,
-                            }}
-                        >
-                            Diana K. Apoznanski
-                        </strong>
+                        <Box>
+                            <strong
+                                style={{
+                                    color: mainTitleColor,
+                                    fontSize: mainTitleSize,
+                                }}
+                            >
+                                Diana K. Apoznanski
+                            </strong>
+                        </Box>
+                        <Box style={{ textAlign: "center" }}>
+                            <span
+                                style={{
+                                    color: subTitleColor,
+                                    fontStyle: subTitleFontStyle,
+                                }}
+                            >
+                                PHD Student, Rutgers University
+                            </span>
+                        </Box>
                     </Box>
-                    <Box style={{ textAlign: "center" }}>
-                        <span
-                            style={{
-                                color: subTitleColor,
-                                fontStyle: subTitleFontStyle,
-                            }}
-                        >
-                            PHD Student, Rutgers University
-                        </span>
-                    </Box>
+
                     {isMobileView && (
                         <Box style={buttonBoxStyles}>
                             <Button
@@ -104,8 +114,7 @@ const Navbar = () => {
                                 Publications
                             </Button>
                             <Button
-                                component={Link}
-                                to="/cv"
+                                onClick={handleCVButtonClick}
                                 style={linkStyles}
                             >
                                 CV
@@ -125,7 +134,10 @@ const Navbar = () => {
                         >
                             Publications
                         </Button>
-                        <Button component={Link} to="/cv" style={linkStyles}>
+                        <Button
+                            onClick={handleCVButtonClick}
+                            style={linkStyles}
+                        >
                             CV
                         </Button>
                     </Box>

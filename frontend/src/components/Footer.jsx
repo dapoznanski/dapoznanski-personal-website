@@ -9,6 +9,18 @@ import {
 
 const Footer = () => {
     const buttonTextColor = "#083054"; // Text color for buttons
+    const iconStyles = {
+        fontSize: "24px",
+        transition: "transform 0.3s",
+    };
+
+    const handleIconHover = (event) => {
+        event.target.style.transform = "scale(1.2)";
+    };
+
+    const handleIconLeave = (event) => {
+        event.target.style.transform = "scale(1)";
+    };
 
     return (
         <Box
@@ -34,7 +46,7 @@ const Footer = () => {
             >
                 <Typography variant="body1">
                     <Link
-                        href="https://github.com/eamonduffy"
+                        href="https://www.linkedin.com/in/diana-apoznanski-976243127/"
                         target="_blank"
                         rel="noopener noreferrer"
                         color="inherit"
@@ -44,10 +56,16 @@ const Footer = () => {
                             verticalAlign: "middle",
                         }}
                     >
-                        <AiFillLinkedin color={buttonTextColor} size={30} />
+                        <AiFillLinkedin
+                            color={buttonTextColor}
+                            size={30}
+                            style={iconStyles}
+                            onMouseEnter={handleIconHover}
+                            onMouseLeave={handleIconLeave}
+                        />
                     </Link>
                     <Link
-                        href="https://github.com/eamonduffy"
+                        href="https://www.instagram.com/diana.apz/"
                         target="_blank"
                         rel="noopener noreferrer"
                         color="inherit"
@@ -57,10 +75,16 @@ const Footer = () => {
                             verticalAlign: "middle",
                         }}
                     >
-                        <AiOutlineInstagram color={buttonTextColor} size={30} />
+                        <AiOutlineInstagram
+                            color={buttonTextColor}
+                            size={30}
+                            style={iconStyles}
+                            onMouseEnter={handleIconHover}
+                            onMouseLeave={handleIconLeave}
+                        />
                     </Link>
                     <Link
-                        href="https://github.com/eamonduffy"
+                        href="https://twitter.com/dapoznanski"
                         target="_blank"
                         rel="noopener noreferrer"
                         color="inherit"
@@ -70,10 +94,16 @@ const Footer = () => {
                             verticalAlign: "middle",
                         }}
                     >
-                        <AiOutlineTwitter color={buttonTextColor} size={30} />
+                        <AiOutlineTwitter
+                            color={buttonTextColor}
+                            size={30}
+                            style={iconStyles}
+                            onMouseEnter={handleIconHover}
+                            onMouseLeave={handleIconLeave}
+                        />
                     </Link>
                     <Link
-                        href="https://github.com/eamonduffy"
+                        href="https://github.com/dapoznanski"
                         target="_blank"
                         rel="noopener noreferrer"
                         color="inherit"
@@ -83,7 +113,13 @@ const Footer = () => {
                             verticalAlign: "middle",
                         }}
                     >
-                        <AiFillGithub color={buttonTextColor} size={30} />
+                        <AiFillGithub
+                            color={buttonTextColor}
+                            size={30}
+                            style={iconStyles}
+                            onMouseEnter={handleIconHover}
+                            onMouseLeave={handleIconLeave}
+                        />
                     </Link>
                 </Typography>
             </div>

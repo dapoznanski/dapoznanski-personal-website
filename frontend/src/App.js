@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/about/About";
 import Publications from "./pages/Publications";
-import CV from "./pages/CV";
 
 // components
 import Navbar from "./components/Navbar";
@@ -20,10 +19,8 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/publications" element={<Publications />} />
-                    <Route path="/cv" element={<CV />} />
                 </Routes>
             </div>
-            {/* <Footer /> */}
         </div>
     );
 }

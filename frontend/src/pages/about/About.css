@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: white;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 10px ;
+}
+
+.white {
+    background: white;
+    margin-top: 10px;
+}
+
+.light-blue {
+    background: #0099ff;
+}
+
+.dark-blue {
+    /* height: 400px; */
+    background: #043a70;
+    color: white;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('../../static/layer1.svg');
+}
+
+.layer2 {
+    background-image: url('../../static/layer2.svg');
+}
+
