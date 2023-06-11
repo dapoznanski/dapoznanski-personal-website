@@ -1,42 +1,70 @@
-# SpringBoot-React-Template
+# Getting Started with Create React App
 
-This repository contains a template project for building a web application using Spring Boot (Java) for the backend and React.js for the frontend. The project is organized into separate directories for the backend and frontend components.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Backend
+## Available Scripts
 
-The backend directory contains the server-side code written in Spring Boot. It follows a GraphQL architecture for handling API requests. Here's an overview of the files and directories within the backend:
+In the project directory, you can run:
 
--   `src/main/java/com/duffy/backend`: The Java source code for the backend.
-    -   `controllers`: Contains the controller classes that define the GraphQL endpoints.
-    -   `models`: Contains the data models used in the application, including the `Tutorial` and `Author` classes.
-    -   `repositories`: Contains the repository interfaces for data access.
-    -   `services`: Contains the service classes that handle the business logic and data operations.
--   `src/main/resources`: Contains the application configuration files and resources.
-    -   `application.properties`: Configures various settings for the Spring Boot application, such as database connection details.
+### `npm start`
 
-## Frontend
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The frontend directory contains the client-side code written in React.js. It handles the user interface and communicates with the backend API. Here's an overview of the files and directories within the frontend:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
--   `src/components`: Contains the reusable React components used in the application.
--   `src/pages`: Contains the main pages of the application, such as the tutorial listing and tutorial details pages.
--   `src/graphql`: Contains the client-side GraphQL querires responsible for making requests to the backend.
--   `src/App.js`: The main entry point for the React application.
--   `src/index.js`: Renders the root component and sets up the React application.
+### `npm test`
 
-## Getting Started
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-To run the application locally, follow these steps:
+### `npm run build`
 
-1. Ensure you have Java, Maven, and Node.js installed on your system.
-2. Clone this repository: `git clone https://github.com/eamonduffy/SpringBoot-React-Template.git`
-3. Navigate to the backend directory: `cd SpringBoot-React-Template/backend`
-4. Build and run the Spring Boot backend: `mvn spring-boot:run`
-5. Open another terminal and navigate to the frontend directory: `cd ../frontend`
-6. Install the frontend dependencies: `npm install`
-7. Start the frontend development server: `npm start`
-8. Open your web browser and visit `http://localhost:3000` to see the application.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Feel free to explore and modify the code in both the backend and frontend directories to fit your specific requirements.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-For more detailed instructions and information about the project, refer to the README files in each directory.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
