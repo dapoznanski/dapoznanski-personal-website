@@ -24,6 +24,8 @@ import squid1 from "../../static/squid.svg";
 
 const About = () => {
     const isMobileView = useMediaQuery("(max-width: 1750px)");
+    const isMobileViewImgs = useMediaQuery("(max-width: 1500px)");
+
 
     const handleNavClick = (id) => {
         const element = document.getElementById(id);
@@ -34,7 +36,7 @@ const About = () => {
     return (
         <>
             <Box className="section white">
-                {!isMobileView && (
+                {!isMobileViewImgs && (
                     <>
                         <img
                             src={bird1}
@@ -150,7 +152,7 @@ const About = () => {
             <div className="spacer layer1"></div>
 
             <Box className="section light-blue" id="before-rutgers-section">
-                {!isMobileView && (
+                {!isMobileViewImgs && (
                     <>
                         <img
                             src={fish1}
@@ -263,7 +265,7 @@ const About = () => {
             <div className="spacer layer2"></div>
 
             <Box className="section dark-blue" id="personal-section">
-                {!isMobileView && (
+                {!isMobileViewImgs && (
                     <>
                         <img
                             src={whale1}
